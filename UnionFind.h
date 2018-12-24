@@ -1,3 +1,16 @@
+//
+//  UnionFind.h
+//  hnandag2/data-structs
+//
+//  C++ implementation of the really cool UnionFind class that I learned about from
+//  watching William Fiset's brilliant Youtube tutorial on this data structure -
+//  https://www.youtube.com/watch?v=ibjEGG7ylHk
+//
+//  TODO: implement Path Compression in the find() function
+//  TODO: implement working Kruskal's algorithm example using a UnionFind object
+//
+//  Created by Nandagopal, Harihar on 12/23/18.
+//
 
 #include <iostream>
 #include <vector>
@@ -80,11 +93,3 @@ private:
     std::unordered_map<T, T> rootMap;
     std::unordered_map<T, int> sizeMap;
 };
-
-//template <> struct std::hash<T>
-//{
-//    size_t operator()(const T & x) const
-//    {
-//        return std::hash<int>()(static_cast<int>(x));
-//    }
-//};
