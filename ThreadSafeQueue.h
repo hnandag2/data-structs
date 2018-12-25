@@ -5,6 +5,9 @@
 //  and a condition variable. All accesses will be serialized, however waitAndPop()
 //  will always wait for the queue to not be empty.
 //
+//  Design is based off the tutorial in Anthony Williams' C++ Concurrency In Action
+//  book (Chapter 6).- https://www.oreilly.com/library/view/c-concurrency-in/9781933988771/
+//
 //  Created by Nandagopal, Harihar on 12/24/18.
 //
 
