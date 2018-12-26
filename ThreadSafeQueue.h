@@ -2,7 +2,7 @@
 //  ThreadSafeQueue.h
 //
 //  single lock (ie: not fine-grained) thread-safe queue implemented using a mutex
-//  and a condition variable. All accesses will be serialized, however waitAndPop()
+//  and a condition variable. All calls will be serialized, however waitAndPop()
 //  will always wait for the queue to not be empty.
 //
 //  Design is based off the tutorial in Anthony Williams' C++ Concurrency In Action
