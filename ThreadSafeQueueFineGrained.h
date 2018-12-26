@@ -12,8 +12,8 @@
 //  the same time, 2 or more pushing threads can allocate memory concurrently, 2
 //  popping threads can deallocate memory/write result concurrently
 //
-//  Design is based off the tutorial in Anthony Williams' C++ Concurrency In Action
-//  book (Chapter 6).- https://www.oreilly.com/library/view/c-concurrency-in/9781933988771/
+//  Design is based off Chapter 6 of Anthony Williams' C++ Concurrency In Action
+//  book- https://www.oreilly.com/library/view/c-concurrency-in/9781933988771/
 //
 //  Created by Nandagopal, Harihar on 12/25/18.
 //
