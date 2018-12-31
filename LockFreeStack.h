@@ -6,9 +6,11 @@
 //  to be garbage collected at the last pop()- since the last pop() will
 //  be by a single thread.
 //
-//  Note: compare_exchange_weak() is used to improve efficiency on
-//  platforms that do not guarantee single instruction CAS.
+//  Note: compare_exchange_weak() is used to ensure single instruction CAS
+//  on platforms that do not always guarantee single instruction CAS.
 //
+//  Design is based off the tutorial in Anthony Williams' C++ Concurrency In Action
+//  book (Chapter 7).- https://www.oreilly.com/library/view/c-concurrency-in/9781933988771/
 //
 //  Created by Nandagopal, Harihar on 12/28/18.
 //
